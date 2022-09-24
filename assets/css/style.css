@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+:root{
+    --dark:rgb(8, 8, 8);
+    --light:rgba(208, 217, 222, 0.592);
+    --border:white;
+    --border-btn:white;
+    
+}
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+    /* background-color: #06d6d2; */
+
+}
+
+a{
+    text-decoration: none;
+    font-family:Arial, Helvetica, sans-serif;
+}
+.container{
+    max-width: 1024px;
+    text-align: center;
+    padding-top: 10px;
+    margin-bottom: 150px;
+    padding-left: 400px;
+
+}
+.nav-brand{
+    font-weight: bold;
+    color: rgb(26, 32, 26);
+    font-weight: bold;
+    font-size: xx-large;
+    padding-top: 20px;
+    
+}
+.add{
+    box-sizing: border-box;
+    border-color: brown;
+    margin-bottom: 20px;
+    color: rgb(230, 20, 20);
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    padding-left: 200px;
+    border: 1px solid var(--border);
+
+    
+}
+.table{
+    border-radius: 20px;
+    border-color: black;
+    box-sizing: border-box;
+    align-content:flex-end;
+    justify-content: space-between;
+    padding-top: 30px;
+    padding-left: 400px;
+    border-spacing: 0px;
+    width: 80%;
+}
+.table td, .table th{
+    padding: .75em;
+    vertical-align: top;
+    text-align: center;
+    border: 1px solid var(--border);
+    border-color: black;
+}
+.table td{
+    border-radius: 3px;
+}
+
+
+.table td > a{
+    padding: .3em 1em;
+    font-size: 1.1em;
+    margin: 0 .2em;
+}
+.table tr:hover{
+    background-color:#06d6a0 ;
+}
+.table tr:hover td > a{
+    box-shadow: none;
+}
+.table .thead-dark th{
+    color: #fff;
+    background-color: var(--dark) ;
+    border-color: #32383e;
+}
+tr { border: 1px solid var(--border);}
+/* form{
+  text-align: center;
+    vertical-align: top;
+    justify-content: space-between;
+
+} */
+.heading{
+    text-align: center;
+}
+
+.list{
+    padding-left: 100px;
+   
+}
+
+#update_user .form-group,
+#add_user .form-group{
+    margin: .4em 0;
+}
+
+#update_user .form-group,
+#add_user .form-group {
+    text-align: center;
+    margin: .5em 0b ;
+    border: 1px solid var(--border);
+    font-family: 'Barlow', sans-serif;
+    font-size: 1em;
+    border-radius: .2em;
+}
+#update_user .form-group .radio,
+#add_user .form-group .radio{
+    margin: 1em 2em;
+}
+#update_user .form-group .btn,
+#add_user .form-group .btn{
+    width: 100%;
+    padding: .9em 1em;
+    background-color:#16db93; 
+    border: none;
+    font-family: 'PT Sans', sans-serif;
+    font-size: 1em;
+    cursor: pointer;
+    border-radius: .2em;
+    margin: .5em 0;
+}
+.update{
+    width: 100px;
+    font-size: medium;
+    
+}
+.update:hover{
+    background-color: #16db93;
+}
+
+
+
+/* .thead{
+    border-radius: 20px;
+    border-color: aquamarine;
+} */
+

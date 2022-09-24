@@ -1,0 +1,15 @@
+<% for(var i=0;i<Data.length;i++){%>
+<tr>
+    <td><%=i+1%></td>
+    <td><%=Data[i].Name%></td>
+    <td><%=Data[i].Email%></td>
+    <td><%=Data[i].Gender%></td>
+    <td><%=Data[i].City%></td>
+    <td><a href="/UpdateUser?id=<%=Data[i]._id%>" class="btn border-shadow"><span class="text-gradient"><i
+                    class="fa-solid fa-pen"></i></span></a>
+        <a href="/delete/<%=Data[i]._id%>" class="btn border-shadow delete"><span class="text-gradient" onclick="alert('User Deleted Successfully');">
+                <i class="fa-solid fa-user-minus"></i>
+            </span></a>
+    </td>
+</tr>
+<%}%>

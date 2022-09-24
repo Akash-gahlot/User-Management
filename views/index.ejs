@@ -1,0 +1,40 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <title>User Management</title>
+</head>
+<body>
+    <%-include('include/_header');%>
+    
+</body>
+<div>
+    <form action="/" method="post">
+        <a href="/Add-user" class="add"><span> New User
+            <i class="fa-sharp fa-solid fa-user-plus"></span></i>
+    </a>
+        <table class="table">
+            <thead class="thead text-dark">
+                <tr>
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>@Email</th>
+                    <th>Gender</th>
+                    <th>City</th>
+                    <th>Action</th>
+
+                </tr>
+            </thead>
+             <tbody>
+                <%-include('include/_content');%>
+            </tbody> 
+        </table>
+    </form>
+</div>
+
+</html>
